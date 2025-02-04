@@ -1,9 +1,13 @@
 const no = document.getElementById("no")
-function changetoyes(){
-    no.textContent='Please';
+
+no.addEventListener("mouseenter",func);
+function func(){
+    no.textContent="Please";
 }
-function changetono(){
-    no.textContent='No';
+no.addEventListener("mouseout",func2);
+function func2(){
+    no.textContent="No";
+
 }
 
 
